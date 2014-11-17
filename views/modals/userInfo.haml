@@ -1,0 +1,135 @@
+#userInfoModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        .header
+          .icon 
+            %i.flaticon-info2
+          .text
+            %h2#myModalLabel.modal-title Informácie pre klientov
+      .modal-body
+        %center
+          %ul.nav.nav-pills
+            %li.active
+              %a{"data-toggle" => "pill", :href => "#user1"} 
+                .icon
+                  %i.flaticon-heart258
+                .text Informacie o zdravotných poisťovniach
+            %li
+              %a{"data-toggle" => "pill", :href => "#user2"}
+                .icon
+                  %i.flaticon-pill
+                .text Informácie o liečivách
+
+      %hr.blue
+
+        .tab-content
+
+          #user1.tab-pane.fade.in.active
+            .tabbable.tabs-left
+              %ul.nav.nav-tabs.nav-global.insurance
+                %li.active
+                  %a{"data-toggle" => "tab", :href => "#insurance1"} VZP
+                %li
+                  %a{"data-toggle" => "tab", :href => "#insurance2"} Union
+                %li
+                  %a{"data-toggle" => "tab", :href => "#insurance3"} Dôvera
+
+
+
+              .tab-content
+
+                #insurance1.tab-pane.fade.city.in.active
+                  .body                  
+                    %h3.head
+                      %b Všobecná Zdravotná Poisťovňa
+                    .text
+
+                #insurance2.tab-pane.fade
+                  .body
+                    %h3.head
+                      %b Union Poisťovňa
+                    .text
+
+
+                #insurance3.tab-pane.fade
+                  .body
+                    %h3.head
+                      %b Poisťovňa Dôvera
+                    .text
+
+
+
+
+          #user2.tab-pane.fade
+
+            .tabbable.tabs-left
+              %ul.nav.nav-tabs.nav-global.drugs
+                %li.active
+                  %a{"data-toggle" => "tab", :href => "#drug1"} Liečivo 1
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug2"} Liečivo 2
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug3"} Liečivo 3
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug3"} Liečivo 4
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug3"} Liečivo 5
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug3"} Liečivo 6
+                %li
+                  %a{"data-toggle" => "tab", :href => "#drug3"} Liečivo 7
+
+
+
+
+
+              .tab-content
+
+                #insurance1.tab-pane.fade.city.in.active
+                  .body                    
+                    %h3.head
+                      %b Liečivo 1
+                    .text
+
+
+                #insurance2.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 2
+                    .text
+
+                #insurance3.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 3
+                    .text
+
+                #insurance4.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 4
+                    .text
+
+                #insurance5.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 5
+                    .text
+
+                #insurance6.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 6
+                    .text
+
+                #insurance7.tab-pane.fade
+                  .body                    
+                    %h3.head
+                      %b Liečivo 7
+                    .text
+
+
+      .modal-footer
+        %button.btn.btn-lg.btn-close{"data-dismiss" => "modal", :type => "button"} Zavrieť
